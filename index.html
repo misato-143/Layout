@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    #wrapper-div
+    {
+        width: 60%;
+        background-color: rgb(255, 249, 222);
+        margin: auto;
+        font-family: Arial;
+    }
+
+    #main-div
+    {
+        width: 100%;
+        min-height: 50px;
+        margin-bottom: 15px;
+    }
+
+    #logo-div
+    {
+        width: 30%;
+        min-height: 50px;
+        background-color: lightgrey;
+        text-align: left;
+        line-height: 50px;
+        padding-left: 10%;
+        float: left;
+    }
+ 
+    #navigation-div
+    {
+        width: 70%;
+        min-height: 50px;
+        background-color: lightgrey;
+        text-align: right;
+        line-height: 50px;
+        padding-right: 20%;
+        float: right;
+    }
+
+    #header-banner-div
+    {
+        width: 100%;
+        min-height: 100px;
+        text-align: center;
+        line-height: 100px;
+        background-color: lightgrey;
+        margin-bottom: 15px;
+    }
+
+    #intro-text-area-div
+    {
+        width: 100%;
+        min-height: 100px;
+        text-align: center;
+        line-height: 100px;
+        background-color: lightgrey;
+        margin-bottom: 30px;
+    }
+
+    #main2-div
+    {
+        
+        width: 100%;
+        min-height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    #box1-div
+    {
+        width: 30%;
+        min-height: 400px;
+        background-color: lightgrey;
+        text-align: center;
+        line-height: 400px;
+        float: left; margin-right: 20px; 
+    }
+
+    #box2-div
+    {
+        width: 30%;
+        min-height: 400px;
+        background-color: lightgrey;
+        text-align: center;
+        line-height: 400px;
+        float: left; margin-right: 20px; margin-left: 30px;
+    }
+
+    #box3-div
+    {
+        width: 30%;
+        min-height: 400px;
+        background-color: lightgrey;
+        text-align: center;
+        line-height: 400px;
+        float: right; margin-left: 10px;
+    }
+
+    .clearfix::after
+    {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #footer-div
+    {
+        width: 100%;
+        min-height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: lightgrey;
+    }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper-div">
+        <div id="main-div" class="clearfix">
+            <div id="logo-div">
+                <h1>Logo</h1>
+            </div>
+            <div id="navigation-div">
+                <h1>Navigation</h1>
+            </div>
+        </div>
+
+        <div id="header-banner-div">
+            <h2>Header / Banner</h2>
+        </div>
+
+        <div id="intro-text-area-div">
+            <h2>Intro Text Area</h2>
+        </div>
+
+        <div id="main2-div" class="clearfix">
+            <div id="box1-div">
+                <h1>Box 1</h1>
+            </div>
+
+            <div id="box2-div">
+                <h1>Box 2</h1>
+            </div>
+
+            <div id="box3-div">
+                <h1>Box 3</h1>
+            </div>
+        </div>
+
+        <div id="footer-div">
+            <h2>Footer</h2>
+        </div>
+
+    </div>
+</body>
+</html>
